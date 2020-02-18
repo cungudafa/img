@@ -131,8 +131,8 @@ def handle_photo():
             list_info[-1]['arr']['type'].append('image')
     list_info.reverse()  # 翻转
     final_dict = {"list": list_info}
-    # 注意这里是完整目录
-    with open("data.json","w") as fp:
+    # 这里可以直接修改到你的hexo资源目录
+    with open("D:/myworkspace/1GitHub_cungudafa/MyWeb/themes/sakura/source/album/data.json","w") as fp:
         json.dump(final_dict, fp)
 
 def cut_photo():
