@@ -132,7 +132,7 @@ def handle_photo():
     list_info.reverse()  # 翻转
     final_dict = {"list": list_info}
     # 注意这里是完整目录
-    with open("D:/myworkspace/1GitHub_cungudafa/cdn/Blog_Album/data.json","w") as fp:
+    with open("data.json","w") as fp:
         json.dump(final_dict, fp)
 
 def cut_photo():
